@@ -4,6 +4,7 @@ import {FaBirthdayCake} from 'react-icons/fa'
 import {GiFrance,GiSoccerField,GiSoccerBall,GiShakingHands} from 'react-icons/gi'
 import { Radar } from "react-chartjs-2"
 import { Chart, registerables } from 'chart.js';
+import PlayerIcon from "../components/PlayerIcon"
 Chart.register(...registerables);
 
 const Player = () =>{
@@ -47,6 +48,7 @@ const Player = () =>{
 
     return(
         <div>
+            <PlayerIcon />
             <div className="flex space-x-10">
                 {test.map(data=>{
                     return(
