@@ -1,5 +1,6 @@
 import React from "react";
 import { playerData } from "../../data/player";
+import TableLine from "../TableLine/index";
 const Table = ({}) => {
   return (
     <div className="overflow-x-auto">
@@ -19,18 +20,9 @@ const Table = ({}) => {
           </tr>
         </thead>
         <tbody>
-          <tr className="hover">
-            <th>{playerData[0].id}</th>
-            <td>{playerData[0].Nom}</td>
-            <td>{playerData[0].Prenom}</td>
-            <td>{playerData[0].Age}</td>
-            <td>{playerData[0].Poste}</td>
-            <td>{playerData[0].Nationalité}</td>
-            <td>{playerData[0].Match}</td>
-            <td>{playerData[0].Buts}</td>
-            <td>{playerData[0].Passes}</td>
-            <td>Blue</td>
-          </tr>
+          {playerData.map((player) => {
+            return <TableLine data={player} />;
+          })}
         </tbody>
       </table>
     </div>

@@ -1,14 +1,13 @@
-import React from 'react'
-import './App.css'
-import Player from './pages/player';
+import React from "react";
+import "./App.css";
+import Home from "./pages/home";
 
 const App = () => {
-  
-    return (
-      <div className='h-[100vh] bg-slate-600'>
-        <Player />
-      </div>
-    );
-  }
+  return (
+    <div className="">
+      <Home />
+    </div>
+  );
+};
 
-export default App
+export default App;
