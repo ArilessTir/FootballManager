@@ -3,7 +3,6 @@ import PlayerInfo from "../components/PlayerInfo";
 import { playerData } from "../data/player";
 import { useParams } from "react-router-dom";
 import {
-  GiFrance,
   GiSoccerField,
   GiSoccerBall,
   GiShakingHands,
